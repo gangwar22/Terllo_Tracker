@@ -1,0 +1,66 @@
+
+.line{
+  height: 14px;
+  width: 30%;
+  background:#198754;
+  border-radius: 20px;
+}
+.lines{
+  height: 14px;
+  width: 30%;
+  background: rgb(15, 129, 222);
+  border-radius: 20px;
+}
+.lines1{
+  height: 14px;
+  width: 30%;
+  background: rgb(239, 27, 12);
+  border-radius: 20px;
+}
+#line-two{
+  height: 14px;
+  width: 30%;
+  background: rgb(15, 129, 222);
+  border-radius: 20px;
+}
+.all{
+  font-size: larger;
+}
+.btn{
+  border-radius: 20px;
+  font-size: larger;
+  padding: 5px 30px;
+}
+#reverse{
+  font-size: xx-large;
+  margin-top: -20px;
+}
+
+.hello{
+  width:auto;
+}
+.blue{
+  height: 14px;
+  width: 30%;
+  background: rgb(15, 129, 222);
+  border-radius: 20px;
+}
+.red{
+  height: 14px;
+  width: 30%;
+  background: rgb(239, 27, 12);
+  border-radius: 20px;
+}
+.green{
+  height: 14px;
+  width: 30%;
+  background: #198754;
+  border-radius: 20px;
+}
+.red{
+  height: 14px;
+  width: 30%;
+  background: rgb(239, 27, 12);
+  border-radius: 20px;
+}
+

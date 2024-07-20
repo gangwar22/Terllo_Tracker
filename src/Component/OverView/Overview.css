@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to right, #e0f7fa, #e0f2f1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.intro {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
+    border: 2px solid #1a73e8;
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.intro a {
+    color: #ffffff;
+    background-color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #1a73e8;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.intro a:hover {
+    background-color: #155ab1;
+}
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+}
+
+.key-benefits, .reports-insights {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 40px;
+    border: 2px solid #4caf50; /* Green border */
+}
+
+.key-benefits h2, .reports-insights h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #4caf50; /* Green underline */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.key-benefits ul, .reports-insights ul {
+    list-style: none;
+    padding: 0;
+}
+
+.key-benefits li, .reports-insights li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #666;
+}
+
+.key-benefits li strong, .reports-insights li strong {
+    color: #333;
+}
+
+.company-tracker {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 2px solid #ff5722; /* Orange border */
+}
+
+.company-tracker h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #ff5722; /* Orange underline */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.members {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 2px solid #673ab7; /* Purple border */
+}
+
+.members h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #673ab7; /* Purple underline */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.members-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.member-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.member-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.member-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.member-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+@media (min-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .intro {
+        margin-bottom: 20px;
+    }
+
+    .benefits {
+        margin-bottom: 20px;
+    }
+
+    .key-benefits, .reports-insights {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cards-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .members-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .member-card {
+        flex: 1;
+        min-width: 200px;
+    }
+}
+
+.imges{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ_xtSRDAGn3t2zTUrgBFJ6g1xpBlPe3SmVA&usqp=CAU");
+}

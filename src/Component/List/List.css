@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+
+header {
+  padding: 15px 5px 5px;
+}
+
+.header-inner-container {
+  max-width: 1180px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.25em;
+  color: rgba(50, 50, 50, 0.9);
+  margin-top: 35px;
+}
+
+.search-container {
+  margin-top: 15px;
+}
+
+.search-input {
+  padding: 0.4rem 1rem;
+  border: 1px solid #006666;
+  border-radius: 0.25rem 0 0 0.25rem;
+  max-width: 20rem;
+  transition: .4s ease-out;
+  box-shadow: 5px 5px #009999;
+  outline: none;
+}
+
+.search-input:active, .search-input:hover, .search-input:focus {
+  border: 1px solid rgba(50, 50, 50, 0.9);
+}
+
+.search-submit {
+  cursor: pointer;
+  height: 33px;
+  background: rgba(245, 245, 245, 0.9);
+  border-radius: 0 0.25rem 0.25rem 0;
+  border: .5px solid #006666;
+  transition: .4s ease-out;
+  box-shadow: 5px 5px #009999;
+  outline: none;
+}
+
+.search-submit:active, .search-submit:hover, .search-submit:focus {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(50, 50, 50, 0.9);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  max-width: 360px;
+  margin: 10px;
+  padding: 10px;
+  background: rgba(245, 245, 245, 0.9);
+  border-radius: .75em;
+  border: 2px solid #006666;
+  box-shadow: 5px 5px #009999;
+  transition: .4s ease-out;
+  overflow: hidden; /* Ensure content does not overflow */
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.card-img-container {
+  margin-bottom: 10px;
+}
+
+.card-img {
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.card-info-container {
+  text-align: center;
+}
+
+.card-name {
+  color: #2c3e50;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis to overflow text */
+}
+
+.card-text {
+  color: rgba(50, 50, 50, 0.9);
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis to overflow text */
+}
+
+.cap {
+  text-transform: capitalize;
+}
+
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: relative;
+  max-width: 500px;
+  margin: 10px;
+  background: #fff;
+  border-radius: .5em;
+  padding-bottom: 10px;
+}
+
+.modal-close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #a6a6a6;
+  border: none;
+  background: transparent;
+}
+
+.modal-info-container {
+  margin-top: 30px;
+  color: rgba(50, 50, 50, 0.9);
+}
+
+.modal-img {
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 30px 0 20px;
+}
+
+.modal-text {
+  margin: 5px 0;
+}
+
+.conatainer-list-img{
+  background-image: url("https://www.shutterstock.com/image-photo/blurred-shadow-palm-leaves-on-260nw-2261327067.jpg");
+  background-repeat:no-repeat;
+  background-size: 100% 120%;
+}
+
+.modal-prev, .modal-next {
+  cursor: pointer;
+  width: 100px;
+  margin-top: 10px;
+  border: none;
+  background: #00b3b3;
+  color: #fff;
+  border-radius: .25rem;
+  padding: .5rem;
+  transition: .4s ease-out;
+  box-shadow: 5px 5px #009999;
+  outline: none;
+}
+
+.modal-prev:hover, .modal-next:hover {
+  background: #009999;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-inner-container {
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 1em;
+  }
+
+  .search-input {
+    max-width: 100%;
+  }
+
+  .gallery {
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .modal {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .modal-prev, .modal-next {
+    width: 80px;
+  }
+}
